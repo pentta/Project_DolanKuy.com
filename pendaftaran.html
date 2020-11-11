@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title b>DolanKuy</title>
+    <link rel="stylesheet" type="text/css" href="pendaftaran.css">
+</head>
+<body>
+    <div class="isi">
+    <div class="kepala">
+    <div class="key"></div>
+    <h2 class="judul">Sign in DolanKuy</h2>
+    </div>
+
+    <div class="form">
+        <form class="horizontal" action="form.html" method="post">
+        <fieldset><center><legend>Akun</legend></center>
+        <div class="grup">
+            <label for="username">Username<span class="required" >*</span></label>
+            <input type="text" name="username" required placeholder="Masukkan Username">
+        </div>
+
+        <div class="grup">
+        <label for="password">Password<span class="required">*</span></label>
+        <input type="password" name="password" required placeholder="Masukkan password">
+        </div>
+        </fieldset>
+    
+        <fieldset><center><legend>Data Pribadi</legend></center>
+        <div class="grup">
+            <label for="nama">Nama Lengkap<span class="required">*</span></label>
+            <input type="text" name="Nama" required placeholder="Masukkan Nama Lengkap">
+        </div>
+
+        <div class="grup">
+            <label for="NIK">NIK<span class="required">*</span></label>
+            <input type="text" name="Nama" required placeholder="Masukkan NIK">
+        </div>
+
+        <div class="grup">
+            <label for="email">E-mail<span class="required">*</span></label>
+            <input type="email" name="email" required placeholder="XXXXXXXX@gmail.com">
+        </div>
+
+        <div class="grup">
+        <label for="no.telp">No.HP<span class="required">*</span></label>
+        <input type="tel" name="No.Hp" pattern="\d\d\d\d\d\d\d\d\d\d\d\d" required placeholder=" +62 xxxxxxxxxxxx">
+        </div>
+
+        <div class="grup-offset">
+            <label for="JK">Jenis Kelamin<span class="required">*</span><br></label>
+            <input type="radio" name="JK" value="Laki-Laki" required>Laki-laki
+            <input type="radio" name="JK" value="Perempuan" required>Perempuan
+        </div>
+    
+        <p>Upload foto ktp:</p>
+        <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+
+            <div class="grup-offset">
+    </div>
+    </fieldset>
+    </div>
+    <center><input type="submit"></center>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
