@@ -1,66 +1,140 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  max-width: 100%;
+  border: none;
+}
+body{
+  background-image: url("wall-wallpaper-concrete-colored-painted-textured-concept.jpg");
+}
+nav{
+  background: #242526;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 65px;
+  line-height: 65px;
+}
+nav .wrapper{
+  max-width: 1250px;
+  padding: 0 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .logo a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+}
+.wrapper .nav-link{
+  display: inline-flex;
+}
+.nav-link li{
+  list-style: none;
+}
+.nav-link li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.nav-link li a:hover{
+  background: #3A3B3C;
+}
+.nav-link .daftar-wisata{
+  background: #242526;
+  width: 180px;
+  top: 85px;
+  line-height: 45px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav-link li:hover .daftar-wisata{
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3 ease;
+}
+.daftar-wisata li a{
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+.nav-link .akun{
+  background: #242526;
+  width: 100px;
+  top: 85px;
+  line-height: 45px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav-link li:hover .akun{
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3 ease;
+}
+.akun li a{
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+
   .container {
-    position: relative;
+    position: fixed;
+    width: 100%;
   }
   
-  /* Hide the images by default */
   .mySlides {
     display: none;
   }
-  
-  /* Add a pointer when hovering over the thumbnail images */
+
   .cursor {
     cursor: pointer;
   }
-  
-  /* Next & previous buttons */
+
   .prev,
   .next {
     cursor: pointer;
-    position: absolute;
+    position: relative;
     top: 40%;
-    width: auto;
+    width: 100%;
+    max-width: 100%;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
-    user-select: none;
     -webkit-user-select: none;
   }
-  
-  /* Position the "next button" to the right */
+
   .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    margin-left: 50%;
+    border-radius: 0 3px 3px 0;
   }
-  
-  /* On hover, add a black background color with a little bit see-through */
+
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.5;
   }
   
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
   }
   
   .row:after {
@@ -68,19 +142,86 @@
     display: table;
     clear: both;
   }
-  
-  /* Six columns side by side */
+
   .column {
     float: left;
-    width: 16.66%;
+    width: 12.5%;
   }
-  
-  /* Add a transparency effect for thumnbail images */
+
   .demo {
-    opacity: 0.6;
+    opacity: 0.9;
   }
   
   .active,
   .demo:hover {
     opacity: 1;
   }
+  .pesan{
+    
+    padding: 10px 30px;
+    line-height: 30px;
+    background-color:#f96d01;
+    font-family: inherit;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    box-sizing: inherit;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: block;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    float:right ;
+    width: 37.15%;
+    max-width: 100%;
+  }
+
+
+  .harga{
+    padding: 10px 30px;
+    line-height: 30px;
+    background-color:#2787f5;
+    font-family: inherit;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: block;
+    margin-right:5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    float:right ;
+    width: 37.15%;
+    max-width: 100%;
+  }
+
+  .price{
+    position: relative;
+    width: 100%;
+    margin-right: 100%;
+    
+  }
+  .textbox{
+    border: none;
+    text-align: justify;
+    width: 37.15%;
+    margin-right:5%;
+    float:right;
+    overflow: auto;
+    padding-top: 10%;
+    padding-bottom: auto;
+    display: inline-block;
+    color: white;
+  }
+
+
+
