@@ -1,29 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 body{
-    background-image: url(bg.png);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: seashell;
     font-family: Arial;
-    margin: 10 auto;
     opacity: 1;
     border: #00868b;
-    margin-top: -20px;
     box-sizing: 100px;
-   }
+}
+nav{
+    background: #242526;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 65px;
+    line-height: 65px;
+}
+nav .wrapper{
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .logo a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+}
+.wrapper .nav-link{
+    display: inline-flex;
+}
+.nav-link li{
+    list-style: none;
+}
+.nav-link li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.nav-link li a:hover{
+    background: #3A3B3C;
+}
+.nav-link .daftar-wisata{
+    background: #242526;
+    width: 180px;
+    top: 85px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-link li:hover .daftar-wisata{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3 ease;
+}
+.daftar-wisata li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+.nav-link .akun{
+    background: #242526;
+    width: 100px;
+    top: 85px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-link li:hover .akun{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3 ease;
+}
+.akun li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
 .konten{
-    background: rgba(61, 55, 55, 0.5);    
+    background: rgba(61, 55, 55);    
     width: 500px;
-    margin: 30px auto 0;
+    margin: auto;
     border-radius: 16px;
-    overflow: hidden;;
+    overflow: hidden;
+    padding-top: 100px;
    }
 .lock{
     display: inline-block;
     width: 20px;
     height: 10px;
-    margin-top: 10px;
-    float: center;
-    margin-right: 40px;
-    border: #00868b;
+    border: black;
     }
 .judul{
     color: #ffffff;
@@ -79,14 +163,9 @@ body{
     color: red;
     font-weight: normal;
    }
-.footer{
-    padding: 3px;
-    color: #ffffff;
-    height: 30px;
-    margin-left: 30px;
-    margin-bottom: :-40px;
-    margin-top: -20px;
-   }
-.submit-form{
-       margin-left: 0.83cm;
-   }
+.sign{
+    font-size: medium;
+}
+footer {
+    font-size: 80%;
+    padding: 7px 0px 0px 20px;}
