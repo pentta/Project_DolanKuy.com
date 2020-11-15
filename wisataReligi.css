@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(wall-wallpaper-concrete-colored-painted-textured-concept.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav{
+    background: #242526;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 65px;
+    line-height: 65px;
+}
+nav .wrapper{
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .logo a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+}
+.wrapper .nav-link{
+    display: inline-flex;
+}
+.nav-link li{
+    list-style: none;
+}
+.nav-link li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.nav-link li a:hover{
+    background: #3A3B3C;
+}
+.nav-link .daftar-wisata{
+    background: #242526;
+    width: 180px;
+    top: 85px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-link li:hover .daftar-wisata{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3 ease;
+}
+.daftar-wisata li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+.nav-link .akun{
+    background: #242526;
+    width: 100px;
+    top: 85px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-link li:hover .akun{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3 ease;
+}
+.akun li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+.konten{
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.religi{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    float: left;
+}
+header{
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+}
+.konten-religi{
+    font-size: medium;
+    margin-top: 15px;
+}
+.konten-religi li a{
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+.konten .konten-religi{
+    list-style: none;
+}
+aside {
+    width: 230px;
+    float: right;
+    padding: 0px 0px 0px 20px;}
+aside section a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;}
+aside section a:hover {
+    color: white;
+    background-color: #efefef;}
+a {
+    color: white;
+    text-decoration: none;}
+h1, h2, h3 {
+    font-weight: normal;}
+h2 {
+    margin: 10px 0px 5px 0px;
+    padding: 0px;}
+h3 {
+    margin: 0px 0px 10px 0px;
+    color: white;}
+aside h2 {
+    padding: 30px 0px 10px 0px;
+    color: white;
+}
+footer {
+    font-size: 80%;
+    padding: 7px 0px 0px 20px;}
